@@ -28,6 +28,14 @@ def generar_contraseña(longitud=12):
     # Unimos la lista para formar la cadena final
     return ''.join(contraseña)
 
-# Llamamos a la función y mostramos la contraseña generada
+# Pedimos al usuario la longitud de la contraseña y validamos la entrada
 if __name__ == "__main__":
-    print("Contraseña segura generada:", generar_contraseña())
+    entrada = input("¿De cuántos caracteres querés la contraseña? (mínimo 4): ")
+    try:
+        longitud = int(entrada)
+        if longitud < 4:
+            print("Por favor, ingresá un número mayor o igual a 4.")
+        else:
+            print("Contraseña segura generada:", generar_contraseña(longitud))
+    except ValueError:
+        print("Por favor, ingresá un número válido.")
