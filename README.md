@@ -1,4 +1,4 @@
-chill_berry
+Ignacio Gabriel Yañez
 Estudiante de Licenciatura en Sistemas en Argentina, enfocado en el desarrollo de software y en la búsqueda de mi primera oportunidad laboral profesional.
 
 Perfil Técnico
